@@ -17,11 +17,11 @@
 }
 
 body {
-  background:
-  linear-gradient(
-    rgba(0,0,0,.6),rgba(0,0,0,.6)
-  ),
+  background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
     url("../assets/images/background-cover.jpg") fixed no-repeat;
     background-size: cover;
-    opacity: 0.3;
+}
+
+h1, h2, h3 {
+  color: rgb(255,250,250);
 }
