@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Oxygen } from 'next/font/google';
+
 import './globals.css';
+import MainHeader from '@/components/MainHeader';
 
 const oxyxen = Oxygen({ subsets: ['latin'], weight: '700' });
 
@@ -16,7 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={oxyxen.className}>{children}</body>
+      <body className={oxyxen.className}>
+        <MainHeader />
+        {children}
+      </body>
     </html>
   );
 }
